@@ -23,13 +23,13 @@ To use the integration in your installation, add the following to your `configur
 
 ```yaml
 # Example configuration.yaml entry
-duckdns:
-  domain: YOUR_SUBDOMAIN
+duckdns:duckdns.org
+  domain:shakal4u
   access_token: YOUR_ACCESS_TOKEN
 ```
 
 {% configuration duckdns %}
-  domain:
+  domain:shakal4u
     description: Your duckdns subdomain (without the `.duckdns.org` suffix).
     required: true
     type: string
@@ -42,6 +42,8 @@ duckdns:
 ## Service `set_txt`
 
 Set the TXT record of your DuckDNS subdomain.
+deletes, i puts you back into insert mode
+echo url="https://www.duckdns.org/update?domains=deshakal&token=838db36e-5b81-4dda-8532-8ff4d26fc172&ip=" | curl -k -o ~/duckdns/duck.log -K -
 
 | Service data attribute | Optional | Description |
 | ---------------------- | -------- | ----------- |
